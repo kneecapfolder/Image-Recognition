@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#webcam {
+    border: .5vh solid black;
+    width: 50vh;
+    aspect-ratio: 4/3;
+}
+
+button {
+    cursor: pointer;
+}
