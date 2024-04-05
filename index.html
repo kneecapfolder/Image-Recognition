@@ -11,11 +11,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd" defer></script>
         <script src="main.js" defer></script>
     </head>
 
     <body>
-        <button onclick="openCam();">open webcam</button>
-        <video id="webcam"></video>
+        <button onclick="toggleCam();">open webcam</button>
+        <div id="container">
+            <video width="600" height="450" id="webcam"></video>
+        </div>
     </body>
 </html>

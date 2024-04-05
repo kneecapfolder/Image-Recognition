@@ -1,21 +1,52 @@
+* {
+    color: white;
+    box-sizing: border-box;
+}
+
+head {
+    display: none;
+}
+
 body {
+    margin: 0;
+    background-color: black;
     width: 100%;
     height: 100vh;
-    margin: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1vh;
+    gap: 10px;
+}
+
+#container {
+    display: flex;
+}
+
+#container p {
+    margin: 0;
+    position: absolute;
+    background-color: #ff6f00d9;
+    border: 1px dashed #ffffffb3;
+    font-size: 10px;
+    width: inherit;
+}
+
+.highlighter {
+    position: absolute;
+    background: #00ff0040;
+    border: 1px dashed white;
 }
 
 #webcam {
-    border: .5vh solid black;
-    width: 50vh;
-    aspect-ratio: 4/3;
+    background-color: #32000065;
+    width: 600px;
+    height: 450px;
 }
 
 button {
     cursor: pointer;
+    background-color: black;
+    border: 2px solid white;
 }
